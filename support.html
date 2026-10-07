@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Log an IT Ticket | NOVATECH IT SUPPORT</title>
+<meta name="description" content="Log a support request with the NovaTech service desk.">
+<meta name="author" content="NOVATECH IT SUPPORT">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="brand" href="index.html#top" aria-label="NovaTech IT Support home">
+      <span class="brand__mark"><img src="https://novatech-solutions-hub.lovable.app/assets/novatech-company-logo-transparent-Bsnj0aUW.png" alt="NovaTech logo" width="30" height="30"></span>
+      <span class="brand__text"><strong>NOVATECH</strong><span>IT SUPPORT</span></span>
+    </a>
+    <ul class="nav__links">
+      <li><a href="index.html#top">Home</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <a class="btn btn--sm nav__cta" href="support.html">Get Support</a>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-head">
+  <div class="wrap">
+    <span class="tag">NovaTech service desk</span>
+    <h1>Log an IT support ticket</h1>
+    <p>Record your issue below. Priority, technician, deadline and tracking status are calculated using the NVT workbook rules.</p>
+  </div>
+</section>
+
+<section class="pull">
+  <div class="wrap">
+    <div class="channels">
+      <div class="card channel">
+        <span class="tag">Desktop</span>
+        <p>Open the original NVT Tracker Excel document on your computer.</p>
+        <a class="btn btn--outline btn--plain" href="https://novatech-solutions-hub.lovable.app/novatech-nvt-tracker.xlsx" download>Download Excel workbook</a>
+      </div>
+      <div class="card channel">
+        <span class="tag">Mobile</span>
+        <p>Log your ticket directly on this page — no spreadsheet needed.</p>
+        <a class="btn" href="#ticket-form">Use the online form</a>
+      </div>
+    </div>
+
+    <div class="ticket">
+      <div class="stack">
+        <div class="alert">
+          <h2>Critical incident?</h2>
+          <p>Call NovaTech Service Desk immediately on <a href="tel:+27115550142">+27 (0)11 555 0142</a>, then log the ticket. Available Mon–Fri, 07:00–19:00.</p>
+        </div>
+        <div class="panel">
+          <h3>What happens next</h3>
+          <ol class="next">
+            <li>Your incident number is created.</li>
+            <li>The service desk receives the assigned priority and technician.</li>
+            <li>The deadline and NVT status begin tracking immediately.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="panel" id="ticket-form">
+        <span class="tag">Ticket details</span>
+        <h2 style="font-size:1.7rem;margin-bottom:1.4rem">Describe the issue</h2>
+        <!-- Set the action below to your form-handling address (e.g. a form service or server script). -->
+        <form class="form" action="#ticket-form" method="post">
+          <div class="field"><label for="t-time">Timestamp submitted</label><input id="t-time" name="timestamp" type="datetime-local" required></div>
+          <div class="field"><label for="t-name">Requester name</label><input id="t-name" name="requester" type="text" required autocomplete="name"></div>
+          <div class="field">
+            <label for="t-dept">Department</label>
+            <select id="t-dept" name="department" required>
+              <option value="" selected disabled>Select department</option>
+              <option>Finance</option><option>Human Resources</option><option>Sales</option>
+              <option>Operations</option><option>Management</option><option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="t-cat">Request category</label>
+            <select id="t-cat" name="category" required>
+              <option value="" selected disabled>Select category</option>
+              <option>Hardware</option><option>Software</option><option>Network / Connectivity</option>
+              <option>Email / Accounts</option><option>Security</option><option>Other</option>
+            </select>
+          </div>
+          <div class="field"><label for="t-desc">Short description of issue</label><textarea id="t-desc" name="description" required></textarea></div>
+          <div class="form__row">
+            <div class="field">
+              <label for="t-pri">Priority level</label>
+              <select id="t-pri" name="priority" required>
+                <option value="" selected disabled>Select priority</option>
+                <option>Critical</option><option>High</option><option>Medium</option><option>Low</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="t-tech">Assigned technician</label>
+              <select id="t-tech" name="technician" required>
+                <option value="" selected disabled>Select technician</option>
+                <option>Technician 1</option><option>Technician 2</option><option>Technician 3</option>
+              </select>
+            </div>
+          </div>
+          <p class="hint">Choose the priority and technician that match the NVT workbook rules for this issue.</p>
+          <button class="btn" type="submit">Log Ticket</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a class="brand" href="index.html#top">
+          <span class="brand__mark"><img src="https://novatech-solutions-hub.lovable.app/assets/novatech-company-logo-transparent-Bsnj0aUW.png" alt="NovaTech logo" width="30" height="30"></span>
+          <span class="brand__text"><strong>NOVATECH</strong><span>IT SUPPORT</span></span>
+        </a>
+        <p class="footer__about">Professional IT solutions and dependable technical support for everyday technology needs.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <h2>Navigation</h2>
+        <ul>
+          <li><a href="index.html#top">Home</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="support.html">Log a Ticket</a></li>
+          <li><a href="auth.html" title="Staff sign in">Staff sign in</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Footer services">
+        <h2>Services</h2>
+        <ul>
+          <li><a href="index.html#services">IT Support</a></li>
+          <li><a href="index.html#services">Network Solutions</a></li>
+          <li><a href="index.html#services">Computer Services</a></li>
+          <li><a href="index.html#services">Software Support</a></li>
+          <li><a href="index.html#services">System Maintenance</a></li>
+          <li><a href="index.html#services">Business IT Solutions</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li>[BUSINESS EMAIL]</li>
+          <li>[PHONE NUMBER]</li>
+          <li>[BUSINESS ADDRESS]</li>
+          <li>[BUSINESS HOURS]</li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__bottom">&copy; 2026 NOVATECH IT SUPPORT. Academic student project.</p>
+  </div>
+</footer>
+</body>
+</html>
